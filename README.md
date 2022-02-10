@@ -14,6 +14,6 @@ A website that enables users view fight classes and register for any of the clas
 
 ## Tech stack
 
-Nodejs(for backend)
-React(for frontend)
-MongoDB(for database)
+1. Nodejs(for backend)
+2. React(for frontend)
+3. MongoDB(for database)
