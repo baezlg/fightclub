@@ -17,3 +17,9 @@ A website that enables users view fight classes and register for any of the clas
 1. Nodejs(for backend)
 2. React(for frontend)
 3. MongoDB(for database)
+
+## Steps to run the client
+
+1. cd client
+2. npm install
+3. npm start
