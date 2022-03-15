@@ -4,7 +4,7 @@ import LanguageDetector from "i18next-browser-languagedetector";
 import Cookies from "js-cookie";
 import english from "./locales/en/translations.json";
 import spanish from "./locales/es/translations.json";
-import estonian from "./locales/et/translations.json";
+import estonian from "./locales/ee/translations.json";
 
 const langtranslation = () => {
   return i18n
@@ -15,15 +15,15 @@ const langtranslation = () => {
         en: {
           translation: english,
         },
+        ee: {
+          translation: estonian,
+        },
         es: {
           translation: spanish,
         },
-        et: {
-          translation: estonian,
-        },
       },
       lng: Cookies.get("i18next") || "en",
-      supportedLngs: ["en", "es", "et"],
+      supportedLngs: ["en", "ee", "es"],
       fallbackLng: "en",
       detection: {
         order: [
