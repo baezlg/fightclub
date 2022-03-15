@@ -18,6 +18,7 @@ const Header = () => {
   };
   return (
     <div className="header">
+      <div className="langs">jhjhkjkhjh</div>
       <Navbar
         fixed="top"
         collapseOnSelect
