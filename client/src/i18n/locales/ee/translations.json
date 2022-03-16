@@ -1,6 +1,7 @@
 {
   "home": "avaleht",
   "bjj": "bjj",
+  "kickboxing": "Kikkpoks",
   "wrestling": "maadlus",
   "mma": "mma",
   "boxing": "poks",
@@ -12,6 +13,7 @@
   "contact": "kontakt",
   "login": "logi sisse",
   "our_services": "meie teenuseid",
+  "our_classes": "meie klassid",
   "services_title": "Tasuta fitnessitreening",
   "services_text": "Nende juurest voolab läbi väike jõgi nimega Duden ja varustab seda vajalike regelialiatega. See on paradiismaatiline riik, kus röstitud lauseosad lendavad suhu "
 }

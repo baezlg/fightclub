@@ -7,7 +7,7 @@ const Services = () => {
   return (
     <section className="services">
       <Container>
-        <h2 className="display-1 lead text-center p-5 text-capitalize fw-bolder">
+        <h2 className="display-1 lead text-center p-5 text-capitalize fw-bolder text-danger">
           {t("our_services")}
         </h2>
         <div className="services__items">
