@@ -3,10 +3,16 @@ html {
 }
 body {
   font-size: 1.6rem;
+  background-color: #000;
 }
 .header {
   z-index: 2000;
 }
+section {
+  padding: 10rem 0;
+}
+
+/* FEATURED STYLES */
 .featured {
   position: relative;
 }
@@ -33,6 +39,8 @@ body {
   width: 100%;
   object-fit: cover;
 }
+
+/* HEADER STYLES */
 .navbar-brand {
   font-size: 30px;
 }
@@ -58,10 +66,6 @@ body {
 }
 .icon input {
   display: none;
-}
-
-section {
-  padding: 10rem 0;
 }
 
 .box {
@@ -93,4 +97,36 @@ section {
   text-transform: uppercase;
   transform: translateX(-100%);
   transition: 0.3s linear;
+}
+
+/* PRICES STYLES */
+.prices__slider {
+}
+.prices__slide {
+  background-color: #ffff00;
+  transform: scale(0.9);
+  opacity: 0.5;
+  margin-bottom: 4rem;
+}
+
+.prices .swiper-slide-active {
+  transform: scale(1);
+  opacity: 1;
+  background-color: #ffff00;
+  box-shadow: 0px 10px 5px 1px rgba(0, 0, 0, 0.28);
+  -webkit-box-shadow: 0px 10px 5px 1px rgba(0, 0, 0, 0.28);
+  -moz-box-shadow: 0px 10px 5px 1px rgba(0, 0, 0, 0.28);
+  border: 1px solid #000;
+}
+
+.prices .swiper-horizontal > .swiper-pagination,
+.prices .swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 0;
+}
+
+.prices .swiper-pagination-bullet {
+  background-color: gray;
+}
+.prices .swiper-pagination-bullet-active {
+  background-color: #ffff00;
 }
