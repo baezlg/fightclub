@@ -130,3 +130,20 @@ section {
 .prices .swiper-pagination-bullet-active {
   background-color: #ffff00;
 }
+
+/* INSTAGRAM STYLE */
+.instagram-item {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 25rem;
+  cursor: pointer;
+}
+.instagram-item img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
