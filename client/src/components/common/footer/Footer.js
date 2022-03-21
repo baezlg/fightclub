@@ -1,7 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation();
   return (
     <footer className="footer">
       <section className="footer__top">
@@ -10,43 +12,43 @@ const Footer = () => {
             <Col sm>
               <div className="text-capitalize text-white ">
                 <h2 className="footer__logo mb-5 text-danger">FightClub</h2>
+                <p>{t("footer_intro")}</p>
+              </div>
+            </Col>
+            <Col sm>
+              <div className="text-capitalize text-white ">
+                <h1 className="lead fs-3 mb-5 fw-bolder"> {t("explore")}</h1>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-                  consequatur perspiciatis totam.
+                  <i className="fa-solid fa-arrow-right text-danger me-4 fs-5"></i>
+                  {t("about_us")}
+                </p>
+                <p>
+                  <i className="fa-solid fa-arrow-right text-danger me-4 fs-5"></i>
+                  {t("latest_news")}
+                </p>
+                <p>
+                  <i className="fa-solid fa-arrow-right text-danger me-4 fs-5"></i>
+                  {t("privacy_policy")}
+                </p>
+                <p>
+                  <i className="fa-solid fa-arrow-right text-danger me-4 fs-5"></i>
+                  {t("faq")}
+                </p>
+                <p>
+                  <i className="fa-solid fa-arrow-right text-danger me-4 fs-5"></i>
+                  {t("our_classes")}
                 </p>
               </div>
             </Col>
             <Col sm>
               <div className="text-capitalize text-white ">
-                <h1 className="lead fs-3 mb-5 fw-bolder">Explore</h1>
-                <p>
-                  <i className="fa-solid fa-arrow-right text-danger me-4 fs-5"></i>
-                  About Us
-                </p>
-                <p>
-                  <i className="fa-solid fa-arrow-right text-danger me-4 fs-5"></i>
-                  Latest News
-                </p>
-                <p>
-                  <i className="fa-solid fa-arrow-right text-danger me-4 fs-5"></i>
-                  Privacy Policy
-                </p>
-                <p>
-                  <i className="fa-solid fa-arrow-right text-danger me-4 fs-5"></i>
-                  Frequently Asked Questions
-                </p>
-                <p>
-                  <i className="fa-solid fa-arrow-right text-danger me-4 fs-5"></i>
-                  Our Classes
-                </p>
-              </div>
-            </Col>
-            <Col sm>
-              <div className="text-capitalize text-white ">
-                <h1 className="lead fs-3 mb-5 fw-bolder">Our Contacts</h1>
+                <h1 className="lead fs-3 mb-5 fw-bolder">
+                  {" "}
+                  {t("our_contacts")}
+                </h1>
                 <p>
                   <i className="fa-solid fa-map text-danger me-4"></i>
-                  123 Mustamae Tee, Tallinn, Estonia
+                  {t("address")}
                 </p>
                 <p>
                   <i className="fa-solid fa-phone text-danger me-4"></i>
@@ -62,7 +64,7 @@ const Footer = () => {
         </Container>
       </section>
       <div className="footer__bottom text-white d-flex justify-content-center p-5 bg-secondary">
-        Copyright ©2022 All rights reserved | FightClub
+        {t("copyright")} | FightClub
       </div>
     </footer>
   );

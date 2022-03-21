@@ -15,6 +15,7 @@
   "our_services": "meie teenuseid",
   "our_classes": "meie klassid",
   "our_prices": "meie hinnad",
+  "our_contacts": "meie kontaktid",
   "personal_trainer": "isiklik treener",
   "convenient_time": "mugav aeg",
   "special_class": "eriklass",
@@ -22,5 +23,13 @@
   "fitness_training": "fitness treening",
   "get_started": "alustama",
   "services_title": "Tasuta fitnessitreening",
-  "services_text": "Nende juurest voolab läbi väike jõgi nimega Duden ja varustab seda vajalike regelialiatega. See on paradiismaatiline riik, kus röstitud lauseosad lendavad suhu "
+  "services_text": "Nende juurest voolab läbi väike jõgi nimega Duden ja varustab seda vajalike regelialiatega. See on paradiismaatiline riik, kus röstitud lauseosad lendavad suhu ",
+  "footer_intro": "Poolt võimatu või raskustes avastatud tähistas te. Õiglusrõõm kombed poiss kohtus otsusega. Voodipea valju järgmise plaani rent oli lihtne lisada teda. Nagu tõsimeeli häbematu mujal puudulik hinnang täidetud. Austa minu nõuannet, see on vabandus.",
+  "explore": "uurida",
+  "about_us": "meie kohta",
+  "latest_news": "viimased uudised",
+  "privacy_policy": "privaatsuspoliitika",
+  "faq": "Korduma kippuvad küsimused",
+  "address": "123 mustamaa tee, tallinn, eesti",
+  "copyright": "Autoriõigus ©2022 Kõik õigused kaitstud"
 }
