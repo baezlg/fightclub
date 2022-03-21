@@ -7,7 +7,8 @@ SwiperCore.use([Autoplay]);
 
 const Featured = () => {
   return (
-    <div>
+    <div className="featured">
+      <div className="featured__overlay"></div>
       <Swiper
         modules={[Autoplay, EffectFade]}
         slidesPerView={1}
