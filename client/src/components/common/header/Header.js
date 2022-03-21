@@ -6,7 +6,7 @@ import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
 
 const Header = () => {
   const { t } = useTranslation();
-  const [lang, setLang] = useState(Cookies.get("i18next"));
+  const [lang, setLang] = useState("gb");
   const user = true;
 
   const handleChange = (e) => {
@@ -16,7 +16,7 @@ const Header = () => {
   };
   return (
     <div className="header">
-      <div className="p-2 bg-secondary">
+      <div className="p-2 bg-danger">
         <Container className="d-flex justify-content-end">
           <div className="flags">
             <label
