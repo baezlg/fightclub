@@ -6,7 +6,10 @@ import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
 
 const Header = () => {
   const { t } = useTranslation();
-  const [lang, setLang] = useState(Cookies.get("i18next") || "gb");
+  const [lang, setLang] = useState(
+    Cookies.get("i18next") === "en" ? "gb" : "gb"
+  );
+  console.log(lang);
   const user = true;
 
   const handleChange = (e) => {
