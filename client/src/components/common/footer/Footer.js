@@ -64,7 +64,7 @@ const Footer = () => {
         </Container>
       </section>
       <div className="footer__bottom text-white d-flex justify-content-center p-5 bg-secondary">
-        {t("copyright")} | FightClub
+        {t("copyright")} | <p className="text-danger mx-2"> FightClub</p>
       </div>
     </footer>
   );

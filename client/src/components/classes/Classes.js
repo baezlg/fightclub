@@ -11,7 +11,7 @@ const Classes = () => {
           {t("our_classes")}
         </h2>
         <div className="class__items">
-          <Row lg={3} xs={1}>
+          <Row lg={3} xs={1} md={2}>
             <Col className="mb-3">
               <div className="box">
                 <Image
