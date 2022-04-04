@@ -5,12 +5,12 @@ import { useTranslation } from "react-i18next";
 const Footer = () => {
   const { t } = useTranslation();
   return (
-    <footer className="footer">
+    <footer className="footer ">
       <section className="footer__top">
         <Container>
           <Row>
             <Col sm>
-              <div className="text-capitalize text-white ">
+              <div className="text-capitalize text-white">
                 <h2 className="footer__logo mb-5 text-danger">FightClub</h2>
                 <p>{t("footer_intro")}</p>
               </div>

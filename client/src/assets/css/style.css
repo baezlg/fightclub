@@ -3,7 +3,7 @@ html {
 }
 body {
   font-size: 1.6rem;
-  background-color: #000;
+  background-color: #232020;
 }
 .header {
   z-index: 2000;
@@ -169,4 +169,10 @@ section {
 
 .instagram-item-overlay i {
   font-size: 5rem;
+}
+
+.footer__top {
+  box-shadow: -1px -1px 5px 0px rgba(255, 255, 255, 0.75);
+  -webkit-box-shadow: -1px -1px 5px 0px rgba(255, 255, 255, 0.75);
+  -moz-box-shadow: -1px -1px 5px 0px rgba(255, 255, 255, 0.75);
 }
