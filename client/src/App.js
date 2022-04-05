@@ -1,12 +1,14 @@
 import React from "react";
-import Homepage from "./pages/homepage/Homepage";
-import PrivacyPolicyPage from "./pages/privacyPolicyPage.js/PrivacyPolicyPage";
+import Faq from "./pages/faq/Faq";
+import Home from "./pages/home/Home";
+import PrivacyPolicy from "./pages/privacyPolicy/PrivacyPolicy";
 
 const App = () => {
   return (
     <>
-      {/* <Homepage /> */}
-      <PrivacyPolicyPage />
+      {/* <Home />
+      <PrivacyPolicy /> */}
+      <Faq />
     </>
   );
 };

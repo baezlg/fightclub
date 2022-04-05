@@ -9,7 +9,7 @@ import Reviews from "../../components/reviews/Reviews";
 import Services from "../../components/services/Services";
 import Trainers from "../../components/trainers/Trainers";
 
-const Homepage = () => {
+const Home = () => {
   return (
     <>
       <Header />
@@ -25,4 +25,4 @@ const Homepage = () => {
   );
 };
 
-export default Homepage;
+export default Home;

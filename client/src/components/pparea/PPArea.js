@@ -5,7 +5,7 @@ const PPArea = () => {
   return (
     <section className="text-white">
       <Container>
-        <h1 className="display-1 my-5">Website Privacy Policy</h1>
+        <h1 className="display-1 mb-5">Website Privacy Policy</h1>
         <h3 className="fw-bold mb-4 text-danger">Introduction</h3>
         <p className="display-6">
           Fightclub Franchising, LLC ("Company" or "We") respect your privacy
