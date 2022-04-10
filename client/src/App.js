@@ -1,5 +1,6 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
+import { useSelector } from "react-redux";
 import { useTranslation } from "react-i18next";
 import pMinDelay from "p-min-delay";
 import Loader from "./components/loader/Loader";
@@ -42,15 +43,27 @@ const Account = Loadable(
 
 const App = () => {
   const { t } = useTranslation();
+
+  const userLogin = useSelector((state) => state.userLogin);
+  const { userInfo } = userLogin;
   return (
     <>
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route path={`/${t("login")}`} element={<Login />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/account" element={<Account />} />
-        <Route path={`/${t("contact")}`} element={<Contact />} />
-        <Route path={`/${t("about")}`} element={<About />} />
+        <Route
+          path="/login"
+          element={userInfo ? <Navigate to="/" replace /> : <Login />}
+        />
+        <Route
+          path="/register"
+          element={userInfo ? <Navigate to="/" replace /> : <Register />}
+        />
+        <Route
+          path="/account"
+          element={!userInfo ? <Navigate to="/" replace /> : <Account />}
+        />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<About />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/faq" element={<Faq />} />
         <Route path="*" element={<NotFound />} />

@@ -56,45 +56,52 @@ export const logout = () => (dispatch) => {
   dispatch({ type: contants.USER_LOGOUT });
 };
 
-export const register = (name, email, password) => async (dispatch) => {
-  try {
-    dispatch({
-      type: contants.USER_REGISTER_REQUEST,
-    });
+export const register =
+  (name, email, phone, personalID, password) => async (dispatch) => {
+    try {
+      dispatch({
+        type: contants.USER_REGISTER_REQUEST,
+      });
 
-    const config = {
-      headers: {
-        "Content-Type": "application/json",
-      },
-    };
+      const config = {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      };
 
-    const { data } = await axios.post(
-      "http://localhost:8080/api/users/register",
-      { name, email, password },
-      config
-    );
+      const { data } = await axios.post(
+        "http://localhost:8080/api/users/register",
+        {
+          name,
+          email,
+          phone,
+          personalID,
+          password,
+        },
+        config
+      );
 
-    dispatch({
-      type: contants.USER_REGISTER_SUCCESS,
-      payload: data,
-    });
+      dispatch({
+        type: contants.USER_REGISTER_SUCCESS,
+        payload: data,
+      });
 
-    dispatch({
-      type: contants.USER_LOGIN_SUCCESS,
-      payload: data,
-    });
+      dispatch({
+        type: contants.USER_LOGIN_SUCCESS,
+        payload: data,
+      });
 
-    localStorage.setItem("userInfo", JSON.stringify(data));
-  } catch (error) {
-    dispatch({
-      type: contants.USER_REGISTER_FAIL,
-      payload:
-        error.response && error.response.data.message
-          ? error.response.data.message
-          : error.message,
-    });
-  }
-};
+      localStorage.setItem("userInfo", JSON.stringify(data));
+    } catch (error) {
+      dispatch({
+        type: contants.USER_REGISTER_FAIL,
+        payload:
+          error.response && error.response.data.message
+            ? error.response.data.message
+            : error.message,
+      });
+    }
+  };
 
 export const updatePassword = (user) => async (dispatch, getState) => {
   try {
