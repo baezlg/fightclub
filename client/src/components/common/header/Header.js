@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { useTranslation } from "react-i18next";
@@ -105,7 +105,7 @@ const Header = () => {
               </Nav.Link>
               <Nav.Link
                 as={NavLink}
-                to={`/${t("about")}`}
+                to="/about"
                 className={({ isActive }) =>
                   isActive ? "nav-link.active" : "nav-link"
                 }
@@ -114,7 +114,7 @@ const Header = () => {
               </Nav.Link>
               <Nav.Link
                 as={NavLink}
-                to={`/${t("contact")}`}
+                to="/contact"
                 className={({ isActive }) =>
                   isActive ? "nav-link.active" : "nav-link"
                 }
@@ -139,7 +139,7 @@ const Header = () => {
                 </Button>
               ) : (
                 <Button
-                  onClick={() => navigate(`/${t("login")}`)}
+                  onClick={() => navigate(`/login`)}
                   size="lg"
                   className="text-uppercase"
                   variant="danger"

@@ -22,6 +22,7 @@ export const login = asyncHandler(async (req, res) => {
 
 export const register = asyncHandler(async (req, res) => {
   const { name, email, phone, personalID, password } = req.body;
+  console.log(req.body);
 
   const userExists = await User.findOne({ email });
 
@@ -43,7 +44,7 @@ export const register = asyncHandler(async (req, res) => {
       _id: user._id,
       name: user.name,
       email: user.email,
-      phone: user.personalID,
+      phone: user.phone,
       personalID: user.personalID,
       token: generateToken(user._id),
     });

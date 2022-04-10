@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Button, Container, Form } from "react-bootstrap";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
@@ -6,6 +7,7 @@ import { login } from "../../redux/user/userActions";
 
 const LoginForm = () => {
   const location = useLocation();
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -40,7 +42,7 @@ const LoginForm = () => {
             <Form.Control
               type="email"
               size="lg"
-              placeholder="Enter email"
+              placeholder={`${t("enter-email")}`}
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
@@ -50,21 +52,21 @@ const LoginForm = () => {
             <Form.Control
               type="password"
               size="lg"
-              placeholder="Enter Password"
+              placeholder={`${t("enter-password")}`}
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
           </Form.Group>
           <div className="text-white">
             <p>
-              Don't have an Account?{" "}
+              {`${t("no-account")}`}{" "}
               <Link to="/register" className="text-danger">
-                Register
+                {`${t("register")}`}
               </Link>
             </p>
           </div>
           <Button type="submit" size="lg" className="p-3" variant="danger">
-            Login
+            {`${t("login")}`}
           </Button>
         </Form>
       </Container>

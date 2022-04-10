@@ -20,7 +20,7 @@ const Trainers = () => {
             <Card>
               <Card.Img
                 variant="top"
-                fluid
+                fluid="true"
                 src={Kickboxing_tr}
                 style={{ height: "300px" }}
               />
@@ -36,7 +36,7 @@ const Trainers = () => {
             <Card>
               <Card.Img
                 variant="top"
-                fluid
+                fluid="true"
                 src={Wrestling_tr}
                 style={{ height: "300px" }}
               />
@@ -55,7 +55,7 @@ const Trainers = () => {
             <Card>
               <Card.Img
                 variant="top"
-                fluid
+                fluid="true"
                 src={Boxing_tr}
                 style={{ height: "300px" }}
               />
@@ -72,7 +72,7 @@ const Trainers = () => {
             <Card>
               <Card.Img
                 variant="top"
-                fluid
+                fluid="true"
                 src={Karate_tr}
                 style={{ height: "300px" }}
               />
@@ -91,7 +91,7 @@ const Trainers = () => {
             <Card>
               <Card.Img
                 variant="top"
-                fluid
+                fluid="true"
                 src={Bjj_tr}
                 style={{ height: "300px" }}
               />
