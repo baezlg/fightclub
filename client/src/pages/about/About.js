@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import AboutArea from "../../components/aboutArea/AboutArea";
 import Banner from "../../components/common/banner/Banner";
 import Footer from "../../components/common/footer/Footer";
@@ -8,10 +9,11 @@ import Services from "../../components/services/Services";
 import Trainers from "../../components/trainers/Trainers";
 
 const About = () => {
+  const { t } = useTranslation();
   return (
     <>
       <Header />
-      <Banner title="about" />
+      <Banner title={`${t("about")}`} />
       <AboutArea />
       <Services />
       <Trainers />

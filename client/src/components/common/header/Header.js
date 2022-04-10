@@ -1,20 +1,32 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { NavLink, useNavigate } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
 import { useTranslation } from "react-i18next";
 import i18n from "i18next";
 import Cookies from "js-cookie";
-import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
+import { Navbar, Nav, Container, Button } from "react-bootstrap";
+import { logout } from "../../../redux/user/userActions";
 
 const Header = () => {
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
   const { t } = useTranslation();
   const [lang, setLang] = useState(Cookies.get("i18next"));
   console.log(lang);
-  const user = true;
+
+  const userLogin = useSelector((state) => state.userLogin);
+  const { userInfo } = userLogin;
 
   const handleChange = (e) => {
     const { value } = e.target;
     i18n.changeLanguage(value);
     setLang(Cookies.get("i18next"));
   };
+
+  const logoutHandler = () => {
+    dispatch(logout());
+  };
+
   return (
     <div className="header">
       <div className="p-2 bg-danger">
@@ -76,39 +88,65 @@ const Header = () => {
         className="header-bottom"
       >
         <Container>
-          <Navbar.Brand href="#home">FightClub</Navbar.Brand>
+          <NavLink to="/">
+            <Navbar.Brand>FightClub</Navbar.Brand>
+          </NavLink>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href={`#${t("news")}`}>{t("home")}</Nav.Link>
-              <NavDropdown
-                title={`${t("classes")}`}
-                id="collasible-nav-dropdown"
+              <Nav.Link
+                as={NavLink}
+                to={`/`}
+                className={({ isActive }) =>
+                  isActive ? "nav-link.active" : "nav-link"
+                }
               >
-                <NavDropdown.Item href={`#${t("bjj")}`}>
-                  {t("bjj")}
-                </NavDropdown.Item>
-                <NavDropdown.Item href={`#${t("wrestling")}`}>
-                  {t("wrestling")}
-                </NavDropdown.Item>
-                <NavDropdown.Item href={`#${t("mma")}`}>
-                  {t("mma")}
-                </NavDropdown.Item>
-                <NavDropdown.Item href={`#${t("boxing")}`}>
-                  {t("boxing")}
-                </NavDropdown.Item>
-                <NavDropdown.Item href={`#${t("karate")}`}>
-                  {t("karate")}
-                </NavDropdown.Item>
-              </NavDropdown>
-              <Nav.Link href={`#${t("prices")}`}>{t("prices")}</Nav.Link>
-              <Nav.Link href={`#${t("news")}`}>{t("news")}</Nav.Link>
-              <Nav.Link href={`#${t("about")}`}>{t("about")}</Nav.Link>
-              <Nav.Link href={`#${t("contact")}`}>{t("contact")}</Nav.Link>
+                {t("home")}
+              </Nav.Link>
+              <Nav.Link
+                as={NavLink}
+                to={`/${t("about")}`}
+                className={({ isActive }) =>
+                  isActive ? "nav-link.active" : "nav-link"
+                }
+              >
+                {t("about")}
+              </Nav.Link>
+              <Nav.Link
+                as={NavLink}
+                to={`/${t("contact")}`}
+                className={({ isActive }) =>
+                  isActive ? "nav-link.active" : "nav-link"
+                }
+              >
+                {t("contact")}
+              </Nav.Link>
             </Nav>
             <Nav>
-              {user && <Nav.Link href="#">john</Nav.Link>}
-              <Nav.Link href={`#${t("login")}`}>{t("login")}</Nav.Link>
+              {userInfo && (
+                <Nav.Link as={NavLink} to="/account">
+                  {userInfo.name}
+                </Nav.Link>
+              )}
+              {userInfo ? (
+                <Button
+                  onClick={logoutHandler}
+                  size="lg"
+                  className="text-uppercase"
+                  variant="danger"
+                >
+                  {t("logout")}
+                </Button>
+              ) : (
+                <Button
+                  onClick={() => navigate(`/${t("login")}`)}
+                  size="lg"
+                  className="text-uppercase"
+                  variant="danger"
+                >
+                  {t("login")}
+                </Button>
+              )}
             </Nav>
           </Navbar.Collapse>
         </Container>

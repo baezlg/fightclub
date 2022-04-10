@@ -1,7 +1,9 @@
 import React from "react";
 import { Col, Container, Image, Row } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
 
 const AboutArea = () => {
+  const { t } = useTranslation();
   return (
     <section>
       <Container>
@@ -14,34 +16,8 @@ const AboutArea = () => {
           </Col>
           <Col>
             <div className="text-white">
-              <h1 className="display-4">ABOUT OUR CLUB</h1>
-              <p className="fs-3">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-                suscipit dicta deserunt, maxime fugit asperiores obcaecati
-                blanditiis. Ducimus amet dolorem totam alias asperiores fugit
-                tempore vel molestias placeat facilis, et at accusamus ipsam
-                inventore maiores repudiandae, quia, possimus natus ex harum ut
-                architecto. Sit voluptate neque maxime impedit iure assumenda
-                corrupti perspiciatis necessitatibus quo illo provident ratione
-                magni voluptatibus asperiores harum, natus temporibus porro
-                consequatur rerum voluptas ea, eum mollitia dicta amet? Labore
-                consequuntur, molestias accusamus a, facere laboriosam unde
-                optio explicabo ipsa nemo libero nobis veritatis nisi dolore
-                perspiciatis rem necessitatibus officiis nostrum ab molestiae,
-                officia delectus corporis mollitia? Repellendus quisquam
-                possimus corporis. Sunt eum autem, nam atque provident ducimus.
-                Esse velit voluptatibus vel labore aliquid, suscipit odio iusto
-                optio asperiores ipsam, accusamus dolores incidunt cum libero
-                vitae? Nisi culpa nesciunt officiis quaerat atque velit saepe
-                voluptates commodi minima harum? Quod nemo obcaecati, dolore
-                dicta labore numquam necessitatibus vitae. Beatae eaque fuga
-                optio ea nulla fugit, repudiandae tempora saepe cupiditate
-                explicabo delectus ipsam ratione unde amet quia itaque neque
-                sequi possimus molestiae facere odit. Facere id magni quae
-                molestias mollitia obcaecati, reprehenderit quos aliquid quis
-                explicabo maiores blanditiis rerum placeat, tempore quo sapiente
-                delectus asperiores voluptatum velit? Ad, obcaecati?
-              </p>
+              <h1 className="display-4">{t("about-club")}</h1>
+              <p className="fs-3">{t("about-text")}</p>
             </div>
           </Col>
         </Row>

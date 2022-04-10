@@ -9,6 +9,11 @@ SwiperCore.use([Autoplay]);
 
 const Prices = () => {
   const { t } = useTranslation();
+
+  const handleClick = (e) => {
+    console.log(e.target.name);
+    console.log(e.target.price);
+  };
   return (
     <section className="prices">
       <Container>
@@ -112,7 +117,9 @@ const Prices = () => {
               <Button
                 variant="danger"
                 size="lg"
+                name="kick"
                 className="f3-2 p-3 my-4 text-uppercase"
+                onClick={handleClick}
               >
                 {t("get_started")}
               </Button>

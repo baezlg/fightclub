@@ -1,10 +1,12 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const Instagram = () => {
+  const { t } = useTranslation();
   return (
     <>
       <h2 className="display-1 lead text-center p-5 my-5 text-capitalize fw-bolder text-danger">
-        follow our instagram
+        {t("instagram-f")}
       </h2>
       <div className="d-flex">
         <div className="instagram-item">

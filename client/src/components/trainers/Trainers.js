@@ -1,5 +1,6 @@
 import React from "react";
 import { Card, Col, Container, Row } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
 import Bjj_tr from "./../../assets/img/bjj-tr.jpg";
 import Wrestling_tr from "./../../assets/img/bjj-tr.jpg";
 import Kickboxing_tr from "./../../assets/img/kickboxing-tr.jpg";
@@ -7,11 +8,12 @@ import Boxing_tr from "./../../assets/img/boxing-tr.jpg";
 import Karate_tr from "./../../assets/img/karate-tr.jpg";
 
 const Trainers = () => {
+  const { t } = useTranslation();
   return (
     <section>
       <Container>
         <h2 className="display-1 lead text-center p-5 text-capitalize fw-bolder text-danger">
-          our trainers
+          {t("our_trainers")}
         </h2>
         <Row xs={1} lg={5} md={3}>
           <Col className="mb-2">
@@ -23,8 +25,10 @@ const Trainers = () => {
                 style={{ height: "300px" }}
               />
               <Card.Body className="text-center text-capitalize">
-                <Card.Title className="fs-3 fw-bold">john doe</Card.Title>
-                <Card.Text>kickboxing trainer</Card.Text>
+                <Card.Title className="fs-3 fw-bold">Taylor Lowery</Card.Title>
+                <Card.Text className="text-capitalize">
+                  {t("kickboxing-trainer")}
+                </Card.Text>
               </Card.Body>
             </Card>
           </Col>
@@ -37,8 +41,13 @@ const Trainers = () => {
                 style={{ height: "300px" }}
               />
               <Card.Body className="text-center text-capitalize">
-                <Card.Title className="fs-3 fw-bold">john doe</Card.Title>
-                <Card.Text>Wrestling trainer</Card.Text>
+                <Card.Title className="fs-3 fw-bold">
+                  Giovani Guerrero
+                </Card.Title>
+                <Card.Text className="text-capitalize">
+                  {" "}
+                  {t("wrestling-trainer")}
+                </Card.Text>
               </Card.Body>
             </Card>
           </Col>
@@ -51,8 +60,11 @@ const Trainers = () => {
                 style={{ height: "300px" }}
               />
               <Card.Body className="text-center text-capitalize">
-                <Card.Title className="fs-3 fw-bold">john doe</Card.Title>
-                <Card.Text>Boxing trainer</Card.Text>
+                <Card.Title className="fs-3 fw-bold">Gilbert Ford</Card.Title>
+                <Card.Text className="text-capitalize">
+                  {" "}
+                  {t("boxing-trainer")}
+                </Card.Text>
               </Card.Body>
             </Card>
           </Col>
@@ -65,8 +77,13 @@ const Trainers = () => {
                 style={{ height: "300px" }}
               />
               <Card.Body className="text-center text-capitalize">
-                <Card.Title className="fs-3 fw-bold">john doe</Card.Title>
-                <Card.Text>karate trainer</Card.Text>
+                <Card.Title className="fs-3 fw-bold">
+                  Michael Griffin
+                </Card.Title>
+                <Card.Text className="text-capitalize">
+                  {" "}
+                  {t("karate-trainer")}
+                </Card.Text>
               </Card.Body>
             </Card>
           </Col>
@@ -79,8 +96,10 @@ const Trainers = () => {
                 style={{ height: "300px" }}
               />
               <Card.Body className="text-center text-capitalize">
-                <Card.Title className="fs-3 fw-bold">john doe</Card.Title>
-                <Card.Text>BJJ Trainer</Card.Text>
+                <Card.Title className="fs-3 fw-bold">Abraham Mann</Card.Title>
+                <Card.Text className="text-capitalize">
+                  {t("bjj-trainer")}
+                </Card.Text>
               </Card.Body>
             </Card>
           </Col>

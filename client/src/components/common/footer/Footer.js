@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -20,7 +21,9 @@ const Footer = () => {
                 <h1 className="lead fs-3 mb-5 fw-bolder"> {t("explore")}</h1>
                 <p>
                   <i className="fa-solid fa-arrow-right text-danger me-4 fs-5"></i>
-                  {t("about_us")}
+                  <Link to={`/${t("about")}`} className="quickLink">
+                    {t("about_us")}
+                  </Link>
                 </p>
                 <p>
                   <i className="fa-solid fa-arrow-right text-danger me-4 fs-5"></i>
@@ -28,11 +31,15 @@ const Footer = () => {
                 </p>
                 <p>
                   <i className="fa-solid fa-arrow-right text-danger me-4 fs-5"></i>
-                  {t("privacy_policy")}
+                  <Link to="/privacy-policy" className="quickLink">
+                    {t("privacy_policy")}
+                  </Link>
                 </p>
                 <p>
                   <i className="fa-solid fa-arrow-right text-danger me-4 fs-5"></i>
-                  {t("faq")}
+                  <Link to="/faq" className="quickLink">
+                    {t("faq")}
+                  </Link>
                 </p>
                 <p>
                   <i className="fa-solid fa-arrow-right text-danger me-4 fs-5"></i>
