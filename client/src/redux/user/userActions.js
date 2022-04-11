@@ -2,6 +2,7 @@ import { contants } from "./../types";
 import axios from "axios";
 import i18n from "i18next";
 import Swal from "sweetalert2";
+import { BASE_URL } from "../../utils/baseUrl";
 
 export const login = (email, password) => async (dispatch) => {
   try {
@@ -16,7 +17,7 @@ export const login = (email, password) => async (dispatch) => {
     };
 
     const { data } = await axios.post(
-      "http://localhost:8080/api/users/login",
+      `${BASE_URL}api/users/login`,
       {
         email,
         password,
@@ -71,7 +72,7 @@ export const register =
       };
 
       const { data } = await axios.post(
-        "http://localhost:8080/api/users/register",
+        `${BASE_URL}api/users/register`,
         {
           name,
           email,
@@ -127,7 +128,7 @@ export const updatePassword = (user) => async (dispatch, getState) => {
     };
 
     const { data } = await axios.patch(
-      `http://localhost:8080/api/users/changepassword`,
+      `${BASE_URL}api/users/changepassword`,
       user,
       config
     );
