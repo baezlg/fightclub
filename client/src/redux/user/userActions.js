@@ -1,5 +1,6 @@
 import { contants } from "./../types";
 import axios from "axios";
+import i18n from "i18next";
 import Swal from "sweetalert2";
 
 export const login = (email, password) => async (dispatch) => {
@@ -30,8 +31,8 @@ export const login = (email, password) => async (dispatch) => {
 
     Swal.fire({
       icon: "success",
-      title: "Success",
-      text: "You are logged in",
+      title: i18n.t("success"),
+      text: i18n.t("logged-in"),
     });
 
     localStorage.setItem("userInfo", JSON.stringify(data));
@@ -45,8 +46,8 @@ export const login = (email, password) => async (dispatch) => {
     });
     Swal.fire({
       icon: "error",
-      title: "Oops!!!",
-      text: "Something went wrong",
+      title: i18n.t("oops"),
+      text: i18n.t("error-msg"),
     });
   }
 };
@@ -100,6 +101,11 @@ export const register =
             ? error.response.data.message
             : error.message,
       });
+      Swal.fire({
+        icon: "error",
+        title: i18n.t("oops"),
+        text: i18n.t("error-msg"),
+      });
     }
   };
 
@@ -132,7 +138,7 @@ export const updatePassword = (user) => async (dispatch, getState) => {
     });
     Swal.fire({
       icon: "success",
-      title: "Success",
+      title: i18n.t("success"),
       text: data,
     });
   } catch (error) {
@@ -140,6 +146,11 @@ export const updatePassword = (user) => async (dispatch, getState) => {
       type: contants.USER_PASSWORDCHANGE_FAIL,
       payload:
         error.response && error.response.data ? error.response.data : error,
+    });
+    Swal.fire({
+      icon: "error",
+      title: i18n.t("oops"),
+      text: i18n.t("error-msg"),
     });
   }
 };

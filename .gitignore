@@ -15,4 +15,6 @@ client/coverage
 # production
 client/build
 
+./.env
+.env
 

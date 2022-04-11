@@ -21,7 +21,7 @@ const Footer = () => {
                 <h1 className="lead fs-3 mb-5 fw-bolder"> {t("explore")}</h1>
                 <p>
                   <i className="fa-solid fa-arrow-right text-danger me-4 fs-5"></i>
-                  <Link to={`/${t("about")}`} className="quickLink">
+                  <Link to="/about" className="quickLink">
                     {t("about_us")}
                   </Link>
                 </p>

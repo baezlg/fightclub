@@ -93,5 +93,22 @@
   "intro-5": "Contact Information",
   "pph-3": "To ask questions or comment about this privacy policy and our privacy practices, contact us at:",
   "pp-ad": "123 mustamae str, tallinn & techsupport@fightclub.com.",
-  "about-text": "If that's what you think how bout the other way around? How can you evaluate content without design? No typography, no colors, no layout, no styles, all those things that convey the important signals that go beyond the mere textual, hierarchies of information, weight, emphasis, oblique stresses, priorities, all those subtle cues that also have visual and emotional appeal to the reader. Rigid proponents of content strategy may shun the use of dummy copy but then designers might want to ask them to provide style sheets with the copy decks they supply that are in tune with the design direction they require. Or else, an alternative route: set checkpoints, networks, processes, junctions between content and layout. Depending on the state of affairs it may be fine to concentrate either on design or content, reversing gears when needed.Or maybe not. How about this: build in appropriate intersections and checkpoints between design and content. Accept that it’s sometimes okay to focus just on the content or just on the design.Websites in professional use templating systems. Commercial publishing platforms and content management systems ensure that you can show different text, different data using the same template. When it's about controlling hundreds of articles, product pages for web shops, or user profiles in social networks, all of them potentially with different sizes, formats, rules for differing elements things can break, designs agreed upon can have unintended consequences and look much different than expected."
+  "about-text": "If that's what you think how bout the other way around? How can you evaluate content without design? No typography, no colors, no layout, no styles, all those things that convey the important signals that go beyond the mere textual, hierarchies of information, weight, emphasis, oblique stresses, priorities, all those subtle cues that also have visual and emotional appeal to the reader. Rigid proponents of content strategy may shun the use of dummy copy but then designers might want to ask them to provide style sheets with the copy decks they supply that are in tune with the design direction they require. Or else, an alternative route: set checkpoints, networks, processes, junctions between content and layout. Depending on the state of affairs it may be fine to concentrate either on design or content, reversing gears when needed.Or maybe not. How about this: build in appropriate intersections and checkpoints between design and content. Accept that it’s sometimes okay to focus just on the content or just on the design.Websites in professional use templating systems. Commercial publishing platforms and content management systems ensure that you can show different text, different data using the same template. When it's about controlling hundreds of articles, product pages for web shops, or user profiles in social networks, all of them potentially with different sizes, formats, rules for differing elements things can break, designs agreed upon can have unintended consequences and look much different than expected.",
+  "faq-1": "How many people are in a group class?",
+  "faq-2": "Will there be other beginners in my class?",
+  "faq-3": "Will you help me with my nutritional habits?",
+  "faq-4": "Is there a cardio kickboxing class?",
+  "faq-5": "Will your classes help me tone up?",
+  "faq-6": "How many classes per week should I attend?",
+  "faq-7": "Why can't I just do some cardio instead of kickboxing? Will there be other beginners in my class?",
+  "faq-8": "Do I need to get in shape before I start your classes?",
+  "faq-9": "How long do the kickboxing classes last?",
+  "faq-10": "What are the membership and class prices?",
+  "faq-11": "What is the minimum age to take classes?",
+  "faq-12": "How can I get started?",
+  "faq-a": "Yes. We're always interested in improving our training and one of the best ways to do that is to add new and interesting sessions. If you'd like to contribute some suggestions, please contact us.",
+  "logged-in": "You are logged in",
+  "error-msg": "Something went wrong",
+  "success": "success",
+  "oops": "Oops!!!"
 }

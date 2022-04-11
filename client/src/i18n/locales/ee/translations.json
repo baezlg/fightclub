@@ -95,5 +95,22 @@
   "intro-5": "Kontaktteave",
   "pph-3": "Selle privaatsuspoliitika ja meie privaatsustavade kohta küsimuste esitamiseks või kommenteerimiseks võtke meiega ühendust aadressil:",
   "pp-ad": "123 mustamae tee, tallinn & techsupport@fightclub.com.",
-  "about-text": "Kui sa nii arvad, kuidas oleks vastupidi? Kuidas hinnata sisu ilma disainita? Ei tüpograafiat, värve, paigutust, stiile, kõiki asju, mis edastavad olulisi signaale, mis lähevad kaugemale pelgalt tekstist, teabe hierarhiad, kaal, rõhuasetus, kaldus rõhuasetused, prioriteedid, kõik need peened vihjed, millel on ka visuaalne ja emotsionaalne. pöördub lugeja poole. Sisustrateegia jäigad pooldajad võivad näiva koopia kasutamisest kõrvale hiilida, kuid siis võivad disainerid paluda neil esitada nende tarnitavate koopiapakettidega stiililehed, mis on kooskõlas nende soovitud disainisuunaga. Või alternatiivne marsruut: määrake kontrollpunktid, võrgud, protsessid, ristmikud sisu ja paigutuse vahel. Olenevalt olukorrast võib olla hea keskenduda kas disainile või sisule, vajadusel tagurdada. Või võib-olla mitte. Kuidas oleks sellega: ehitage disaini ja sisu vahele sobivad ristumiskohad ja kontrollpunktid. Nõustuge sellega, et mõnikord on õige keskenduda ainult sisule või kujundusele. Professionaalseks kasutamiseks mõeldud veebisaidid. Kaubanduslikud avaldamisplatvormid ja sisuhaldussüsteemid tagavad, et saate sama malli kasutades näidata erinevat teksti, erinevaid andmeid. Kui tegemist on sadade artiklite, veebipoodide tootelehtede või suhtlusvõrgustikes kasutajaprofiilide kontrollimisega, mis kõik võivad olla erineva suuruse, vorminguga, erinevate elementide reeglitega, mida asjad võivad rikkuda, kokkulepitud kujundustel võivad olla soovimatud tagajärjed ja need näevad välja palju erinevad. oodatust."
+  "about-text": "Kui sa nii arvad, kuidas oleks vastupidi? Kuidas hinnata sisu ilma disainita? Ei tüpograafiat, värve, paigutust, stiile, kõiki asju, mis edastavad olulisi signaale, mis lähevad kaugemale pelgalt tekstist, teabe hierarhiad, kaal, rõhuasetus, kaldus rõhuasetused, prioriteedid, kõik need peened vihjed, millel on ka visuaalne ja emotsionaalne. pöördub lugeja poole. Sisustrateegia jäigad pooldajad võivad näiva koopia kasutamisest kõrvale hiilida, kuid siis võivad disainerid paluda neil esitada nende tarnitavate koopiapakettidega stiililehed, mis on kooskõlas nende soovitud disainisuunaga. Või alternatiivne marsruut: määrake kontrollpunktid, võrgud, protsessid, ristmikud sisu ja paigutuse vahel. Olenevalt olukorrast võib olla hea keskenduda kas disainile või sisule, vajadusel tagurdada. Või võib-olla mitte. Kuidas oleks sellega: ehitage disaini ja sisu vahele sobivad ristumiskohad ja kontrollpunktid. Nõustuge sellega, et mõnikord on õige keskenduda ainult sisule või kujundusele. Professionaalseks kasutamiseks mõeldud veebisaidid. Kaubanduslikud avaldamisplatvormid ja sisuhaldussüsteemid tagavad, et saate sama malli kasutades näidata erinevat teksti, erinevaid andmeid. Kui tegemist on sadade artiklite, veebipoodide tootelehtede või suhtlusvõrgustikes kasutajaprofiilide kontrollimisega, mis kõik võivad olla erineva suuruse, vorminguga, erinevate elementide reeglitega, mida asjad võivad rikkuda, kokkulepitud kujundustel võivad olla soovimatud tagajärjed ja need näevad välja palju erinevad. oodatust.",
+  "faq-1": "Mitu inimest on rühmaklassis?",
+  "faq-2": "Kas minu klassis on teisi algajaid?",
+  "faq-3": "Kas aitate mind minu toitumisharjumustega?",
+  "faq-4": "Kas on olemas kardiokikkpoksi tund?",
+  "faq-5": "Kas teie tunnid aitavad mul tooni tõsta?",
+  "faq-6": "Mitu tundi nädalas peaksin osalema?",
+  "faq-7": "Miks ma ei võiks kikkpoksi asemel lihtsalt kardiot teha? Kas minu klassis on veel algajaid?",
+  "faq-8": "Kas ma pean enne teie tundide alustamist vormi saama?",
+  "faq-9": "Kui kaua kickpoksi tunnid kestavad?",
+  "faq-10": "Millised on liikme- ja klassihinnad?",
+  "faq-11": "Milline vanus on tundides osalemiseks?",
+  "faq-12": "Kuidas ma saan alustada?",
+  "faq-a": "Jah. Oleme alati huvitatud oma koolituste täiustamisest ja üks parimaid viise selleks on lisada uusi ja huvitavaid seansse. Kui soovite anda ettepanekuid, võtke meiega ühendust.",
+  "logged-in": "Olete sisse logitud",
+  "error-msg": "Midagi läks valesti",
+  "success": "edu",
+  "oops": "Oops!!!"
 }
